@@ -4,36 +4,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, 
+initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/
+      font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2Fm
+      JNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
       crossorigin="anonymoreferrerpolicy="no-referrer"
     />
   </head>
   <body>
+     <div>
+      <h1>Random Password Generator</h1>
+    
+    </div>
+    <div class="outputfield">
+      <div id="output"> Select Your Requirements </div>
+      <div class="flipboard">
+        <i class="fa-regular fa-clipboard"></i>
+      </div>
+    </div>
     <div class="container">
       <h2 class="header">Create Password</h2>
-      <div class="outputfield">
-        <div id="output"></div>
-        <div class="flipboard">
-          <i class="fa-regular fa-clipboard"></i>
-        </div>
+     
+
+      <div class="setting">
+        <label>Enter the length of your Password</label>
+        <input type="number" id ="passwordCount" value="20" min="2" max="20" />
       </div>
 
       <div class="setting">
-        <label>Include uppercase letters</label>
-        <input type="number" id ="passwordCount" value="20" min="2" max="20" />
+        <label>Include Uppercase letters</label>
+        <input type="checkbox" id ="uppercase" checked/>
+        <span class="geekmark"></span>
       </div>
 
       <div class="setting">
         <label>Include lowercase letters</label>
         <input type="checkbox" id="lowercase" checked />
         <span class="geekmark"></span>
+        
       </div>
+      
       <div class="setting">
         <label>Include numbers</label>
         <input type="checkbox" id ="number" checked/>
